@@ -1,0 +1,18 @@
+@mixin mainFont($color) {
+  font-family: $fontRoboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 178%; // (32 / 18) * 100%
+  text-align: left;
+  color: $color;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+@mixin customFont($f-family, $f-size, $f-weight, $f-color) {
+  font-family: $f-family;
+  font-size: $f-size;
+  font-weight: $f-weight;
+  color: $f-color;
+} ;
