@@ -7,35 +7,31 @@ const burgerMenu = document.querySelector('.header__burger');
 const slides = document.querySelectorAll('.reviews-slide');
 let openPopup;
 
+// Alert line show/hide
+
 closeCross.onclick = function() {
   html.classList.toggle("alert-line-switch");
 };
 
-// Mobile menu opened
+// Mobile menu show/hide
 
 burgerMenu.onclick = function() {
   html.classList.toggle("mobile-menu-opened");
 };
 
-// Popup's
+// Popups closed
 
 closeCrossPopup.onclick = function() {
   html.classList.add("popup-closed");
   html.classList.remove("popup-opened");
 };
 
-// Popup Open
+// Popups opened
 
 openPopup = function() {
   html.classList.remove("popup-closed");
   html.classList.add("popup-opened");
 };
-
-// Remove aria-hidden attribute from sliders
-
-// for (let slide of slides) {
-// slide.removeAttribute('aria-hidden');
-// };
 
 
 
