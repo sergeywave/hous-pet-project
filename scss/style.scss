@@ -392,7 +392,7 @@ button {
   justify-content: flex-end;
   background-color: #996b60;
 }
-.header-info__wrapper {
+.header-intro__wrapper {
   padding: 90px 60px 100px 60px;
   max-width: 600px;
   display: flex;
@@ -1258,7 +1258,7 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .header-info__wrapper {
+  .header-intro__wrapper {
     padding-bottom: 70px;
   }
   .header-intro__header {
@@ -1505,7 +1505,7 @@ button {
   .header-intro__info {
     width: 100%;
   }
-  .header-info__wrapper {
+  .header-intro__wrapper {
     padding: 90px 25px 90px 25px;
   }
   .header-intro__text,
