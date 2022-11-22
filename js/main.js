@@ -24,6 +24,7 @@ burgerMenu.onclick = function() {
 closeCrossPopup.onclick = function() {
   html.classList.add("popup-closed");
   html.classList.remove("popup-opened");
+  html.classList.remove("no-scroll");
 };
 
 // Popups opened
@@ -31,6 +32,7 @@ closeCrossPopup.onclick = function() {
 openPopup = function() {
   html.classList.remove("popup-closed");
   html.classList.add("popup-opened");
+  html.classList.add("no-scroll");
 };
 
 

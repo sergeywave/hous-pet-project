@@ -75,6 +75,11 @@ img {
   height: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .mobile-menu-opened {
   overflow: hidden;
   height: 100vh;
@@ -377,11 +382,14 @@ button {
 .header-intro__image {
   background-color: #996b60;
   width: 50%;
-  // max-height: 800px;
+  height: 804px;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  @media (max-width: 1400px) {
+    height: auto;
   }
 }
 .header-intro__info {
@@ -392,7 +400,7 @@ button {
   justify-content: flex-end;
   background-color: #996b60;
 }
-.header-info__wrapper {
+.header-intro__wrapper {
   padding: 90px 60px 100px 60px;
   max-width: 600px;
   display: flex;
@@ -427,7 +435,7 @@ button {
   &:hover {
     background-position: 250% 100%;
     color: #fff;
-    border: 1px solid #000;
+    border: 1px solid #fff;
   }
   &:focus-visible {
     outline: 2px solid #000;
@@ -482,7 +490,7 @@ button {
 .reviews__text {
   @include mainFont(#000);
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   max-width: 330px;
 }
 
@@ -622,11 +630,13 @@ button {
   width: 50%;
   text-align: left;
   line-height: 150%;
+  padding-left: 25px;
 }
 .info-full__text {
   @include mainFont(#000);
   width: 50%;
   max-width: 548px;
+  padding-right: 25px;
 }
 
 // INFO-RIGHT SECTION
@@ -644,7 +654,7 @@ button {
   justify-content: space-between;
 }
 .info-right__text {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
   overflow: hidden;
@@ -675,6 +685,7 @@ button {
   flex-basis: 880px;
   padding-left: 20px;
   box-sizing: content-box;
+  height: 68.295%;
   img {
     width: 100%;
     height: auto;
@@ -751,6 +762,8 @@ button {
 .haus-article__img img {
   width: 100%;
   height: auto;
+
+  // @media (max-width: );
 }
 .haus-article__info {
   max-width: 660px;
@@ -760,8 +773,8 @@ button {
   @include customFont($fontLiberation, 64px, 400, #000);
   line-height: 125%;
   text-align: left;
-  margin-bottom: 75px;
-  padding: 0px 20px 0px 20px;
+  margin-bottom: 50px;
+  padding: 6px 20px 0px 20px;
 }
 .haus-article__text {
   @include mainFont(#000);
@@ -780,7 +793,7 @@ button {
   text-decoration: none;
   color: #000;
   display: inline-block;
-  padding-left: 20px;
+  margin-left: 20px;
   &::after {
     content: "";
     display: block;
@@ -849,10 +862,11 @@ button {
   line-height: 116%;
   letter-spacing: 1px;
   text-align: center;
-  border: 1px solid transparent;
+  border: 1px solid #fff;
   background-image: url(../img/wave-black.png);
   background-repeat: repeat-x;
   background-position: 0 -160%;
+  transition: background-position 0.5s ease-out;
   &:hover {
     background-position: 250% 100%;
     color: #fff;
@@ -1194,7 +1208,7 @@ button {
   list-style-type: none;
   margin-left: -20px;
 }
-.popup-send__item {
+.popup-send-me__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1258,7 +1272,7 @@ button {
 }
 
 @media (max-width: 1200px) {
-  .header-info__wrapper {
+  .header-intro__wrapper {
     padding-bottom: 70px;
   }
   .header-intro__header {
@@ -1289,10 +1303,14 @@ button {
     margin-bottom: 25px;
   }
   .info-full__header {
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 125%;
   }
   .info-full__text {
-    padding-right: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .info-right {
     padding-bottom: 0;
@@ -1505,7 +1523,7 @@ button {
   .header-intro__info {
     width: 100%;
   }
-  .header-info__wrapper {
+  .header-intro__wrapper {
     padding: 90px 25px 90px 25px;
   }
   .header-intro__text,
