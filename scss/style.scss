@@ -93,6 +93,7 @@ img {
 
 button {
   border: none;
+  background-color: transparent;
 }
 
 .btn {
@@ -1223,6 +1224,31 @@ button {
   height: 35px;
   margin: 0px 6px 0px 6px;
 }
+
+.social-icons {
+  width: 35px;
+  height: 35px;
+}
+
+.social-icon-circle {
+  fill: #fff;
+}
+
+.social-icon-symbol {
+  fill: #000;
+}
+
+
+.social-icon:hover .social-icon-circle {
+  fill: #1877f2;
+}
+
+.social-icons:hover {
+  transform: scale(1.07);
+  transition-duration: .2s;
+}
+
+
 .linkedin {
   background-image: url(../img/icons/linkedin.svg);
 }
@@ -1236,28 +1262,28 @@ button {
   background-image: url(../img/icons/telegram.svg);
 }
 
-#linkedin:hover,
-#telegram:hover,
-#twitter:hover,
-#facebook:hover {
-  transform: scale(1.07);
-}
+// #linkedin:hover,
+// #telegram:hover,
+// #twitter:hover,
+// #facebook:hover {
+//   transform: scale(1.07);
+// }
 
-#linkedin:hover #LinkedIn-2 {
-  fill: #1d66c2;
-}
+// #linkedin:hover #LinkedIn-2 {
+//   fill: #1d66c2;
+// }
 
-#telegram:hover #Telegram-2 {
-  fill: #28a8e8;
-}
+// #telegram:hover #Telegram-2 {
+//   fill: #28a8e8;
+// }
 
-#twitter:hover #Twitter-2 {
-  fill: #1da1f2;
-}
+// #twitter:hover #Twitter-2 {
+//   fill: #1da1f2;
+// }
 
-#facebook:hover #Facebook-2 {
-  fill: #1877f2;
-}
+// #facebook:hover #Facebook-2 {
+//   fill: #1877f2;
+// }
 
 // MEDIA QUERIES
 

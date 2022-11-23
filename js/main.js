@@ -19,21 +19,29 @@ burgerMenu.onclick = function() {
   html.classList.toggle("mobile-menu-opened");
 };
 
-// Popups closed
 
-closeCrossPopup.onclick = function() {
-  html.classList.add("popup-closed");
-  html.classList.remove("popup-opened");
-  html.classList.remove("no-scroll");
-};
+// Popups
 
-// Popups opened
+const popupSendMe = document.getElementById("popup-send-me");
+let lastFocus;
 
 openPopup = function() {
+  lastFocus = document.activeElement;
   html.classList.remove("popup-closed");
   html.classList.add("popup-opened");
   html.classList.add("no-scroll");
+  popupSendMe.focus();
+
+  closeCrossPopup.onclick = function() {
+    html.classList.add("popup-closed");
+    html.classList.remove("popup-opened");
+    html.classList.remove("no-scroll");
+    lastFocus.focus();
+  };
+
 };
+
+
 
 
 
