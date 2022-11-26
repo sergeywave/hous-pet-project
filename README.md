@@ -18,4 +18,4 @@
 <br>
 <br>
 
-<p align="center"><a href="https://anuraghazra.github.io"><img width="100%" alt="The website preview" src="img/preview.png" /></a></p>
+<p align="center"><a href="https://sergeywave.github.io/hous-pet-project/"><img width="100%" alt="The website preview" src="img/preview.png" /></a></p>
