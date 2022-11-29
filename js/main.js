@@ -9,13 +9,13 @@ let openPopup;
 
 // Alert line show/hide
 
-closeCross.onclick = function() {
+closeCross.onclick = function () {
   html.classList.toggle("alert-line-switch");
 };
 
 // Mobile menu show/hide
 
-burgerMenu.onclick = function() {
+burgerMenu.onclick = function () {
   html.classList.toggle("mobile-menu-opened");
 };
 
@@ -25,14 +25,14 @@ burgerMenu.onclick = function() {
 const popupSendMe = document.getElementById("popup-send-me");
 let lastFocus;
 
-openPopup = function() {
+openPopup = function () {
   lastFocus = document.activeElement;
   html.classList.remove("popup-closed");
   html.classList.add("popup-opened");
   html.classList.add("no-scroll");
   popupSendMe.focus();
 
-  closeCrossPopup.onclick = function() {
+  closeCrossPopup.onclick = function () {
     html.classList.add("popup-closed");
     html.classList.remove("popup-opened");
     html.classList.remove("no-scroll");

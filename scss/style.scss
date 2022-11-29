@@ -75,7 +75,8 @@ img {
 
 .no-scroll {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+  margin-right: 17px;
 }
 
 .mobile-menu-opened {
@@ -1103,17 +1104,16 @@ button {
   z-index: 1000;
   display: none;
 }
-
 .popup-opened .popup-filter {
   display: block;
 }
-
 .popup-send-me {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  // overflow-y: scroll;
 }
 .popup-send-me__wrapper {
   max-width: 500px;
@@ -1121,26 +1121,22 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-image: url(../img/picture-easy-to-drink.webp);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   overflow: auto;
   padding: 0px 0px 0px 0px;
 }
-
 #popup-send-me .close-cross {
   top: 15px;
   right: 18px;
   opacity: 1;
   transform: scale(1.2);
 }
-
 #popup-send-me .close-cross::after,
 #popup-send-me .close-cross::before {
   background-color: #fff;
 }
-
 .popup-send-me__title {
   margin-top: 50px;
   @include customFont($fontLiberation, 40px, 700, #fff);
