@@ -677,7 +677,7 @@ button {
   height: 68.295%;
   img {
     width: 100%;
-    height: auto;
+    aspect-ratio: 16 / 10.9;
   }
 }
 
@@ -750,9 +750,7 @@ button {
 }
 .haus-article__img img {
   width: 100%;
-  height: auto;
-
-  // @media (max-width: );
+  aspect-ratio: auto;
 }
 .haus-article__info {
   max-width: 660px;
