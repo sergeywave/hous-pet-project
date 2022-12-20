@@ -248,20 +248,25 @@ button {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
+  position: relative;
   &:hover {
     opacity: 0.9;
   }
   &::after {
     content: "";
     display: block;
+    position: absolute;
+    right: 0;
     margin-top: 2px;
-    height: 1.5px;
+    height: 1px;
     width: 0%;
     background-color: #fff;
     transition: width 0.3s ease-in-out;
   }
   &:hover::after {
-    width: 99%;
+    width: 100%;
+    left: 0;
+    right: auto;
   }
   &:focus-visible {
     outline: 1px solid #000;
@@ -532,9 +537,12 @@ button {
   text-decoration: none;
   color: #000;
   display: inline-block;
+  position: relative;
   &::after {
     content: "";
     display: block;
+    position: absolute;
+    right: 0;
     margin-top: 2px;
     height: 1px;
     width: 0%;
@@ -544,6 +552,8 @@ button {
   }
   &:hover::after {
     width: 100%;
+    left: 0;
+    right: auto;
   }
 }
 .shop-now__second-wrapper {
@@ -782,9 +792,12 @@ button {
   color: #000;
   display: inline-block;
   margin-left: 20px;
+  position: relative;
   &::after {
     content: "";
     display: block;
+    position: absolute;
+    right: 0;
     margin-top: 2px;
     height: 1.2px;
     width: 0%;
@@ -794,6 +807,8 @@ button {
   }
   &:hover::after {
     width: 100%;
+    left: 0;
+    right: auto;
   }
 }
 
@@ -901,15 +916,18 @@ button {
   text-transform: uppercase;
   margin: 0px 30px;
   display: inline-block;
+  position: relative;
   a {
     text-decoration: none;
     color: #fff;
   }
   &::after {
     content: "";
+    position: absolute;
+    right: 0;
     display: block;
     margin-top: 2px;
-    height: 1.2px;
+    height: 1px;
     width: 0%;
     background-color: #fff;
     -webkit-transition: width 0.3s ease-in-out;
@@ -917,6 +935,8 @@ button {
   }
   &:hover::after {
     width: 100%;
+    left: 0;
+    right: auto;
   }
 }
 
@@ -1044,9 +1064,15 @@ button {
   line-height: 150%;
   letter-spacing: 1px;
   display: inline-block;
+  position: relative;
+  &:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
   &::after {
     content: "";
+    position: absolute;
     display: block;
+    right: 0;
     margin-top: 2px;
     height: 1px;
     width: 0%;
@@ -1056,8 +1082,12 @@ button {
   }
   &:hover::after {
     width: 100%;
-  }
+    left: 0;
+    right: auto;
+
+    }
 }
+
 .footer-main-menu__item {
   margin-bottom: 21px;
 }
@@ -1082,7 +1112,7 @@ button {
   text-decoration: none;
   text-transform: capitalize;
   &:hover {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.75);
   }
 }
 .footer__copyright {
