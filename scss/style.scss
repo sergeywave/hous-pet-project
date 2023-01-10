@@ -1,5 +1,5 @@
-@import "normalize";
 @import "fonts";
+@import "normalize";
 @import "mixins";
 @import "variables";
 
@@ -66,6 +66,7 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+
 }
 
 img {
@@ -414,6 +415,7 @@ button {
 }
 .header-intro__btn {
   max-height: 52px;
+  height: 52px;
   border: 1px solid #fff;
   color: #000;
   letter-spacing: 1px;

@@ -9,7 +9,13 @@
       name="description"
       content="Hous - alcohol for the modern drinker. This is a non-commercial usage for testing web developers' skills."
     />
+    <link rel="preload" href="fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/LiberationSerif.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" as="image" href="img/intro-image.webp">
+    <link rel="preload" as="image" href="img/logo.svg">
     <link rel="stylesheet" href="css/style.css" />
+
+
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="https://sergeywave.github.io/hous-pet-project/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="https://sergeywave.github.io/hous-pet-project/favicon-32x32.png" />
@@ -123,6 +129,7 @@
                 src="img/logo-food-and-wine.svg"
                 alt="Review Food & Wine"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
           </div>
@@ -139,6 +146,7 @@
                 src="img/logo-new-york-times.svg"
                 alt="Review New York Times"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
           </div>
@@ -154,6 +162,7 @@
                 src="img/logo-bon-appetite.svg"
                 alt="Review Bon Appetite"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
           </div>
@@ -177,6 +186,7 @@
                 src="img/img-samplerkit.webp"
                 alt="product image"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
             <div class="good__title">The Sampler Kit</div>
@@ -200,6 +210,7 @@
                 src="img/img-jalapeno.webp"
                 alt="product image"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
             <div class="good__title">Grapefruit Jalaño</div>
@@ -223,6 +234,7 @@
                 src="img/img-citrus.webp"
                 alt="product image"
                 aria-hidden="true"
+                loading="lazy"
               />
             </div>
             <div class="good__title">Citrus Flower</div>
