@@ -19,7 +19,6 @@ burgerMenu.onclick = function () {
   html.classList.toggle("mobile-menu-opened");
 };
 
-
 // Popups
 
 const popupSendMe = document.getElementById("popup-send-me");
