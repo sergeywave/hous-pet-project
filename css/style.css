@@ -6,7 +6,8 @@
 .header__alert-line,
 .info-full__container,
 .buyers-reviews__container,
-._container {
+._container,
+.set-mood__container {
   max-width: 2000px;
 
 }
@@ -27,4 +28,9 @@
 
 .footer__copyright {
   visibility: hidden;
+}
+
+
+.footer__container {
+  max-width: 1390px;
 }
