@@ -28,9 +28,19 @@
 
 .footer__copyright {
   visibility: hidden;
+  display: none;
 }
 
 
 .footer__container {
   max-width: 1390px;
+}
+
+.footer__under-menu.under-menu {
+  width: 100%;
+  max-width: initial;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
