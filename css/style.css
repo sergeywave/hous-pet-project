@@ -44,3 +44,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 768px) {
+  .mobile-menu-opened .header__nav {
+    background-color: rgba(0,0,0,1);
+  }
+}
+
+@media (max-width: 500px) {
+
+  .footer-main-menu__link {
+    padding: 10px 0px;
+  }
+
+  .footer-main-menu__item {
+    margin-bottom: 6px;
+  }
+
+}
