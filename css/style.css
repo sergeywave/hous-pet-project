@@ -90,3 +90,9 @@
 .reviews-slider {
   justify-content: center;
 }
+
+.info-full__wrapper {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
