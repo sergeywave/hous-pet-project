@@ -121,3 +121,8 @@
 .shop-now__title {
   font-size: 19px;
 }
+
+.form-input {
+  padding-left: 15px;
+  padding-right: 15px;
+}
