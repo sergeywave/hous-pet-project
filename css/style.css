@@ -122,3 +122,7 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.good__button.btn {
+  font-size: 14px;
+}
