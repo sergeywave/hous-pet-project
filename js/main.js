@@ -62,6 +62,10 @@ openPopup = function () {
 
 
 
+
+
+
+
 // ======================
 // PRELOADER
 // ======================
@@ -252,30 +256,160 @@ function initAnimations() {
 
   // })
 
-  const reviews = document.querySelector('#reviews');
+  if (window.innerWidth > 1000) {
 
-  if (reviews) {
 
-    gsap.fromTo(reviews, 
-      {
-        y: '100%',
-        opacity: 0
-      },
-      {
-      y: '0', 
-      opacity: 1,
-      stagger: .2,
-      scrollTrigger: {
-        trigger: '.reviews',
-        start: 'top 90%',
-        end: 'bottom 70%',
-        scrub: 1,
-        markers: true
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(SplitText);
+
+
+
+      const headerLogo = document.querySelector('.header__logo');
+      const navLinks = document.querySelectorAll('.header-nav__link');
+
+      if (headerLogo) {
+        gsap.from(headerLogo, {
+          scale: 0,
+          transformOrigin: 'center center',
+          opacity: 0,
+          delay: 0.5,
+          duration: 0.3,
+          ease: 'back.out'
+        });
       }
-    });
 
-  };
+      if (navLinks.length) {
+        gsap.from(navLinks, {
+          scale: 0,
+          transformOrigin: 'center center',
+          opacity: 0,
+          delay: 0.5,
+          duration: 0.3,
+          ease: 'back.out'
+        });
+      }
 
+
+const tl = gsap.timeline({ delay: 0.3 });
+
+const split1 = SplitText.create(".split-text", { type: "chars" });
+const split2 = SplitText.create(".header-intro__text", { type: "chars" });
+
+tl
+.from(split1.chars, {
+  y: 40,
+  color: "#CF3302",
+  opacity: 0,
+  stagger: { each: 0.01, from: "start" },
+  duration: 0.5,
+  ease: "power1.inOut",
+})
+.from(split2.chars, {
+          scale: 0,
+          transformOrigin: 'center center',
+          opacity: 0,
+          duration: 0.5,
+          ease: 'linear'
+}, "-=.5");
+
+
+
+
+const reviews = document.querySelector('#reviews');
+
+if (reviews) {
+
+  gsap.fromTo(reviews, 
+    {
+      y: '100%',
+      opacity: 0
+    },
+    {
+    y: '0', 
+    opacity: 1,
+    stagger: .2,
+    scrollTrigger: {
+      trigger: '.reviews',
+      start: 'top 90%',
+      end: 'bottom 70%',
+      scrub: 1,
+    }
+  });
+
+};
+
+
+
+const bolorImg = document.querySelector('.bolor-section__img');
+const bolorSection = document.querySelector('.bolor-section');
+
+
+if (bolorImg) {
+
+  gsap.from(bolorImg, {
+    y: 60,
+    opacity: 0,
+    duration: 0.5,
+    ease: "sine.out",
+    scrollTrigger: {
+      trigger: bolorSection,
+      start: 'top 100%',
+      end: 'bottom 95%',
+      scrub: 1
+    }
+  })
+
+}
+
+if (bolorSection) {
+
+  gsap.set(bolorSection, {
+    scrollTrigger: {
+      trigger: bolorSection,
+      start: 'top 0',
+      end: 'bottom 0',
+      pin: true,
+      // scrub: true,
+    }
+
+  })
+
+}
+
+
+
+const btnWaves = document.querySelectorAll('.btnWave');
+
+btnWaves.forEach((btnWave) => {
+
+  const topText = btnWave.querySelector('.btnWave__text--top');
+  const bottomText = btnWave.querySelector('.btnWave__text--bottom');
+
+  if (!topText || !bottomText) return;
+
+  const tl = gsap.timeline({ paused: true });
+
+  tl.to(topText, {
+    y: '-300%',
+    opacity: 0,
+    duration: 0.3,
+    ease: 'power2.out'
+  })
+  .to(bottomText, {
+    y: '-120%',
+    duration: 0.3,
+    ease: 'power2.out'
+  }, 0);
+
+  btnWave.addEventListener('mouseenter', () => tl.play());
+  btnWave.addEventListener('mouseleave', () => tl.reverse());
+
+});
+
+
+
+
+  } // window width condition
 
 
 }

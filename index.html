@@ -18,6 +18,7 @@
     <script src="./js/gsap.min.js" defer></script>
     <script src="./js/ScrollTrigger.min.js" defer></script>
     <script src="./js/ScrambleTextPlugin.min.js" defer></script>
+    <script src="./js/SplitText.min.js" defer></script>
     <script src="./js/lenis.min.js" defer></script>
 
     <!-- favicons -->
@@ -114,15 +115,21 @@
 
             <div class="header-intro__info info">
               <div class="header-intro__wrapper">
-                <h1 class="header-intro__header" tabindex="0">
+                <h1 class="header-intro__header split-text" tabindex="0">
                   Alcohol for the modern drinker
                 </h1>
                 <p class="header-intro__text" tabindex="0">
                   Light and refreshing flavors made with real, clean ingredients
                   you can feel good about. Just pour, sip, and enjoy.
                 </p>
-                <button class="header-intro__btn btn" onclick="openPopup()">
+                <!-- <button class="header-intro__btn btn" onclick="openPopup()">
                   shop all
+                </button> -->
+                <button class="header-intro__btn btnWave btn" onclick="openPopup()">
+                  <div class="btnWave__wrapper">
+                    <span class="btnWave__text btnWave__text--top">shop all</span>
+                    <span class="btnWave__text btnWave__text--bottom">shop all</span>
+                  </div>
                 </button>
               </div>
             </div>
@@ -185,6 +192,12 @@
             </div>
           </div>
         </div>
+
+      </section>
+
+      <section class="bolor-section">
+
+        <img class="bolor-section__img" src="./img/sofo.jpg" alt="i">
 
       </section>
 
@@ -755,7 +768,7 @@
             {
               breakpoint: 830,
               settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
               },
             },
             {
