@@ -315,6 +315,31 @@ tl
 
 
 
+const introImage = document.querySelector('.header-intro__image-file');
+
+if (introImage) {
+
+  gsap.fromTo(introImage,
+    {
+      y: -100
+    },
+    {
+      y: 100,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: introImage,
+        start: 'top bottom',
+        end: 'bottom top',
+        scrub: true
+      }
+    }
+  );
+
+}
+
+
+
+
 const reviews = document.querySelector('#reviews');
 
 if (reviews) {
@@ -392,12 +417,12 @@ btnWaves.forEach((btnWave) => {
   tl.to(topText, {
     y: '-300%',
     opacity: 0,
-    duration: 0.3,
+    duration: 0.2,
     ease: 'power2.out'
   })
   .to(bottomText, {
     y: '-120%',
-    duration: 0.3,
+    duration: 0.2,
     ease: 'power2.out'
   }, 0);
 
@@ -405,6 +430,9 @@ btnWaves.forEach((btnWave) => {
   btnWave.addEventListener('mouseleave', () => tl.reverse());
 
 });
+
+
+
 
 
 

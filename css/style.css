@@ -703,12 +703,18 @@ button {
 .header-intro__image {
     background-color: #996b60;
     width: 50%;
+    overflow: hidden;
+    position: relative;
 }
 .header-intro__image img {
-    width: 100%;
-    height: 100%;
+    width: 110%;
+    height: 110%;
     -o-object-fit: cover;
     object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 @media (max-width: 1400px) {
     .header-intro__image {
@@ -729,6 +735,8 @@ button {
     justify-content: flex-end;
     background-color: #38261c;
 }
+
+
 .header-intro__wrapper {
     padding: 90px 60px 100px 60px;
     max-width: 600px;
@@ -755,7 +763,7 @@ button {
     line-height: 178%;
     text-align: left;
     color: #fff;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 @media (max-width: 768px) {
     .header-intro__text {
@@ -771,11 +779,11 @@ button {
     -ms-flex-item-align: start;
     align-self: flex-start;
     background-color: transparent;
-    background-image: url(../img/wave-black.png);
+    background-image: url(../img/wave-de.png);
     background-repeat: repeat-x;
-    background-position: 0 -160%;
-    -webkit-transition: background-position 0.45s ease-out;
-    transition: background-position 0.45s ease-out;
+    background-position: 0 -100%;
+    -webkit-transition: background-position 0.42s ease-out;
+    transition: background-position 0.42s ease-out;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -791,7 +799,7 @@ button {
     width: 250px;
 }
 .header-intro__btn:hover {
-    background-position: 250% 100%;
+    background-position: 350% 100%;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -799,6 +807,13 @@ button {
     outline: 2px solid #000;
     outline-offset: 0;
 }
+
+
+/* .header-intro__btn:hover .btnWave__text--bottom {
+    color: #000;
+} */
+
+
 .info__wrapper :last-child {
     margin-bottom: 0;
 }
@@ -2819,6 +2834,21 @@ button {
   height: 100%;
   object-fit: cover;
 }
+
+.header-intro__info {
+    position: relative;
+    width: 100%;
+}
+
+.header-intro__wrapper {
+    width: 100%;
+    max-width: initial;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 @media (max-width: 830px) {
 
