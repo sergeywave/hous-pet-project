@@ -2819,6 +2819,7 @@ button {
   width: 25px;
   aspect-ratio: 3/6;
   height: auto;
+  height: auto;
 }
 
 .bolor-section {
@@ -2837,7 +2838,6 @@ button {
 
 .header-intro__info {
     position: relative;
-    width: 100%;
 }
 
 .header-intro__wrapper {
