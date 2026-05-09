@@ -261,6 +261,8 @@ function initAnimations() {
 
       gsap.registerPlugin(ScrollTrigger);
       gsap.registerPlugin(SplitText);
+      // gsap.registerPlugin(GSDevTools);
+
 
 
 
@@ -386,18 +388,59 @@ if (bolorImg) {
 
 }
 
+
+
+
+
 if (bolorSection) {
 
-  gsap.set(bolorSection, {
+  const tl = gsap.timeline({
     scrollTrigger: {
       trigger: bolorSection,
-      start: 'top 0',
-      end: 'bottom 0',
+      start: 'top top',
+      end: '+=130%',
       pin: true,
-      // scrub: true,
+      scrub: 1,
     }
+  });
 
-  })
+  tl
+    .from('.bolor-box-el', {
+      scale: 0,
+      rotate: -190,
+      duration: .8
+    })
+
+    .from('.bolor-box-el-photo__two', {
+      scale: 0,
+      rotate: -45,
+      duration: .4
+    }, '-=0.1')
+
+
+    .from('.bolor-box-el-photo__one', {
+      scale: 0,
+      rotate: 60,
+      duration: .4
+    }, '-=0.4')
+
+    .from('.bolor-box-el-photo__three', {
+      scale: 0,
+      rotate: 60,
+      duration: .4
+    }, '-=0.4')
+
+    .from('.bolor-box-el-photo__four', {
+      scale: 0,
+      rotate: 60,
+      duration: .4
+    }, '-=0.5')
+
+    .to({}, {
+      duration: 1.3
+    });
+
+
 
 }
 
