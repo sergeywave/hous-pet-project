@@ -2991,7 +2991,22 @@ button {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     border: 10px solid #ffffff;
-    box-shadow: 0 0 0 1px #000000;
+    box-shadow: 0 0 0 1px #d3d3d3;
 }
 
+
+
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: fixed;
+  left: -12px;
+  top: -14px;
+  pointer-events: none;
+  z-index: 99999;
+  mix-blend-mode: difference;
+  background: #fff;
+  transform: translate(-20%, -20%);
+}
 

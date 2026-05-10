@@ -1,14 +1,5 @@
 "use strict";
 
-
-
-
-
-
-
-"use strict";
-
-
 // ======================
 // INIT
 // ======================
@@ -266,8 +257,10 @@ function initAnimations() {
 
 
 
-      const headerLogo = document.querySelector('.header__logo');
-      const navLinks = document.querySelectorAll('.header-nav__link');
+      const headerLogo       = document.querySelector('.header__logo');
+      const navLinks         = document.querySelectorAll('.header-nav__link');  
+      const headerIntroBtn   = document.querySelector('.header-intro__btn');
+
 
       if (headerLogo) {
         gsap.from(headerLogo, {
@@ -290,6 +283,39 @@ function initAnimations() {
           ease: 'back.out'
         });
       }
+
+      if (headerIntroBtn) {
+        gsap.to(headerIntroBtn, {
+            backgroundPosition: '350% 100%',
+            scrollTrigger: {
+              trigger: headerIntroBtn,
+              start: 'top 60%',
+              end: 'bottom 10%',
+              scrub: true,
+            }
+        });
+        
+      }
+
+      // cursor
+     
+const cursorDot = document.querySelector('.cursor-dot');
+
+if (cursorDot && window.gsap) {
+
+  window.addEventListener('mousemove', (event) => {
+
+    gsap.to(cursorDot, {
+      x: event.clientX,
+      y: event.clientY,
+      opacity: event.target.closest('a') ? 0 : 1,
+      duration: 0.2,
+      ease: 'power2.out'
+    });
+
+  });
+
+}
 
 
 const tl = gsap.timeline({ delay: 0.3 });
@@ -380,16 +406,13 @@ if (bolorImg) {
     ease: "sine.out",
     scrollTrigger: {
       trigger: bolorSection,
-      start: 'top 100%',
+      start: 'top 50%',
       end: 'bottom 95%',
       scrub: 1
     }
   })
 
 }
-
-
-
 
 
 if (bolorSection) {
