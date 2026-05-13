@@ -3008,5 +3008,6 @@ button {
   mix-blend-mode: difference;
   background: #fff;
   transform: translate(-20%, -20%);
+  opacity: .7;
 }
 
