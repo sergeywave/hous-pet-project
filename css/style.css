@@ -2991,6 +2991,7 @@ button {
     width: calc(100% - 10px);
     height: calc(100% - 10px);
     border: 10px solid #ffffff;
+    border: 10px solid #ffffff;
     box-shadow: 0 0 0 1px #d3d3d3;
 }
 
