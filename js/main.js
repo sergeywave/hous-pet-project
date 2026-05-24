@@ -255,8 +255,6 @@ function initAnimations() {
       // gsap.registerPlugin(GSDevTools);
 
 
-
-
       const headerLogo       = document.querySelector('.header__logo');
       const navLinks         = document.querySelectorAll('.header-nav__link');  
       const headerIntroBtn   = document.querySelector('.header-intro__btn');
@@ -333,11 +331,11 @@ tl
   ease: "power1.inOut",
 })
 .from(split2.chars, {
-          scale: 0,
-          transformOrigin: 'center center',
-          opacity: 0,
-          duration: 0.5,
-          ease: 'linear'
+  scale: 0,
+  transformOrigin: 'center center',
+  opacity: 0,
+  duration: 0.5,
+  ease: 'linear'
 }, "-=.5");
 
 
@@ -500,7 +498,70 @@ btnWaves.forEach((btnWave) => {
 
 
 
+document.querySelectorAll( '.domino-text' ).forEach( ( text ) => {
+	const split = SplitText.create( text, {
+		type: 'chars',
+	} );
 
+	gsap.from( split.chars, {
+		rotationZ: -90,
+		transformOrigin: 'bottom left',
+		opacity: 0,
+		stagger: 0.06,
+		duration: 0.25,
+		ease: 'power3.out',
+		scrollTrigger: {
+			trigger: text,
+			start: 'top 80%',
+			once: true,
+		},
+	} );
+} );
+
+document.querySelectorAll( '.fade-in-vw' ).forEach( ( element ) => {
+	gsap.from( element, {
+		y: 30,
+		opacity: 0,
+		duration: 0.7,
+		ease: 'power3.out',
+		scrollTrigger: {
+			trigger: element,
+			start: 'top 50%',
+			once: true,
+		},
+	} );
+} );
+
+const shopNowSection = document.querySelector( '.shop-now' );
+
+if ( shopNowSection ) {
+	const goods = shopNowSection.querySelectorAll( '.shop-now__good' );
+
+	if ( goods.length ) {
+		gsap.set( goods, {
+			y: 60,
+			opacity: 0,
+		} );
+
+		const tl = gsap.timeline( {
+			scrollTrigger: {
+				trigger: shopNowSection,
+				start: 'top top',
+				end: '+=120%',
+				pin: true,
+				scrub: 1,
+			},
+		} );
+
+		tl.to( goods, {
+			y: 0,
+			opacity: 1,
+			duration: 1,
+			stagger: 0.35,
+			ease: 'power3.out',
+		}, 0.15 );
+	}
+}
 
 
   } // window width condition
