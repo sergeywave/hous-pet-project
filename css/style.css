@@ -32,6 +32,7 @@ html {
 }
 body {
     margin: 0;
+
 }
 main {
     display: block;
@@ -931,6 +932,7 @@ button {
     justify-content: flex-start;
     text-align: center;
     margin-bottom: 30px;
+    color: red;
 }
 .shop-now__title {
     font-family: "Roboto", sans-serif;
@@ -2818,8 +2820,8 @@ button {
 
 .slick-next::before, .slick-prev::before {
   width: 25px;
+  width: 25px;
   aspect-ratio: 3/6;
-  height: auto;
   height: auto;
 }
 
