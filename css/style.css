@@ -2967,6 +2967,14 @@ button {
     object-fit: cover;
 }
 
+.bolor-box-el__text {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 80%;
+    text-align: center;
+}
+
+
 .bolor-box-el-photo__one {
     top: 10%;
     left: 95%;
