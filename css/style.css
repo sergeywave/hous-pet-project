@@ -3027,7 +3027,7 @@ button {
   left: -12px;
   top: -14px;
   pointer-events: none;
-  z-index: 99999;
+  z-index: 100000;
   mix-blend-mode: difference;
   background: #fff;
   transform: translate(-20%, -20%);
