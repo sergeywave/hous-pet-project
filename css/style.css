@@ -3000,6 +3000,7 @@ button {
     bottom: -35%;
     left: 3%;
     width: 13vw;
+    width: 13vw;
     transform: translate(-50%, -50%) rotate(4deg);
 }
 
@@ -3019,8 +3020,6 @@ button {
 
 .cursor-dot {
   width: 12px;
-  width: 12px;
-
   height: 12px;
   border-radius: 50%;
   position: fixed;
@@ -3031,6 +3030,6 @@ button {
   mix-blend-mode: difference;
   background: #fff;
   transform: translate(-20%, -20%);
-  opacity: .65;
+  opacity: .75;
 }
 
