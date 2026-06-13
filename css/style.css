@@ -2904,6 +2904,7 @@ button {
 
 .btnWave__text--bottom {
   top: 100%;
+  top: 100%;
   transform: translate(-50%, 0);
 }
 
@@ -2931,7 +2932,6 @@ button {
     top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 7vw;
     width: 7vw;
     height: auto;
 }
@@ -3000,7 +3000,6 @@ button {
     top: initial;
     bottom: -35%;
     left: 3%;
-    width: 13vw;
     width: 13vw;
     transform: translate(-50%, -50%) rotate(4deg);
 }
