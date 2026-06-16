@@ -2904,7 +2904,6 @@ button {
 
 .btnWave__text--bottom {
   top: 100%;
-  top: 100%;
   transform: translate(-50%, 0);
 }
 
@@ -2914,6 +2913,7 @@ button {
     top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
     width: 50%;
     height: auto;
     aspect-ratio: 3/1.7;
@@ -3026,7 +3026,7 @@ button {
   left: -12px;
   top: -14px;
   pointer-events: none;
-  z-index: 100000;
+  z-index: 10000;
   mix-blend-mode: difference;
   background: #fff;
   transform: translate(-20%, -20%);
