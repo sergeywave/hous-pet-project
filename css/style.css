@@ -2930,7 +2930,6 @@ button {
 .bolor-box-vend {
     position: absolute;
     top: 78%;
-    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 7vw;
@@ -2940,6 +2939,7 @@ button {
 .bolor-box-el__title {
     font-size: 30px;
     font-weight: 700;
+    color: #000;
     color: #000;
     margin-bottom: 30px;
 }
@@ -2960,8 +2960,6 @@ button {
     width: 13vw;
     min-width: 200px;
     aspect-ratio: 1/1;
-    aspect-ratio: 1/1;
-
 }
 
 .bolor-box-el-photo img {
