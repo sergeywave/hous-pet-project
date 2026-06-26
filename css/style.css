@@ -2885,6 +2885,7 @@ button {
 .btnWave__wrapper {
     width: 100%;
     height: 25px;
+    height: 25px;
     position: relative;
     overflow: hidden;
 }
@@ -2898,6 +2899,7 @@ button {
 }
 
 .btnWave__text--top {
+  top: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -2922,7 +2924,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;`
     box-shadow: inset 0 0 0 15px #ffffff,
                 inset 0 0 0 16px #000000;
     padding-bottom: 2vw;
@@ -2940,7 +2942,6 @@ button {
 .bolor-box-el__title {
     font-size: 30px;
     font-weight: 700;
-    color: #000;
     color: #000;
     margin-bottom: 30px;
 }
