@@ -2900,7 +2900,6 @@ button {
 
 .btnWave__text--top {
   top: 50%;
-  top: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -3030,6 +3029,8 @@ button {
   z-index: 10000;
   mix-blend-mode: difference;
   background: #fff;
+  background: #fff;
+
   transform: translate(-20%, -20%);
   opacity: .75;
 }
