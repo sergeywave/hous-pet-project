@@ -2820,7 +2820,6 @@ button {
 
 .slick-next::before, .slick-prev::before {
   width: 25px;
-  width: 25px;
   aspect-ratio: 3/6;
   height: auto;
 }
@@ -2847,6 +2846,7 @@ button {
     width: 100%;
     max-width: initial;
     position: absolute;
+    top: 60%;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2891,7 +2891,6 @@ button {
 
 .btnWave__text {
   position: absolute;
-  left: 50%;
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
