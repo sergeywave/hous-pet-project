@@ -3005,6 +3005,7 @@ button {
     position: absolute;
     top: 50%;
     left: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     width: calc(100% - 10px);
     height: calc(100% - 10px);
@@ -3019,6 +3020,7 @@ button {
   height: 12px;
   border-radius: 50%;
   position: fixed;
+  left: -12px;
   left: -12px;
   top: -14px;
   pointer-events: none;
