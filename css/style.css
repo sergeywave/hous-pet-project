@@ -2974,6 +2974,7 @@ button {
 
 .bolor-box-el-photo__one {
     top: 10%;
+    top: 10%;
     left: 95%;
     transform: translate(-50%, -50%) rotate(12deg);
 }
@@ -2995,6 +2996,7 @@ button {
 
 .bolor-box-el-photo__four {
     top: initial;
+    bottom: -35%;
     bottom: -35%;
     left: 3%;
     width: 13vw;
