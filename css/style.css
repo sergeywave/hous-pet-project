@@ -2939,10 +2939,12 @@ button {
     font-size: 30px;
     font-weight: 700;
     color: #000;
+    color: #000;
     margin-bottom: 30px;
 }
 
 .bolor-box-el__text {
+    font-size: 18px;
     font-size: 18px;
     line-height: 1.6;
     max-width: 80%;
@@ -2974,13 +2976,11 @@ button {
 
 .bolor-box-el-photo__one {
     top: 10%;
-    top: 10%;
     left: 95%;
     transform: translate(-50%, -50%) rotate(12deg);
 }
 
 .bolor-box-el-photo__two {
-    top: 10%;
     top: 10%;
     left: 2%;
     transform: translate(-50%, -50%) rotate(-9deg);
@@ -2996,7 +2996,6 @@ button {
 
 .bolor-box-el-photo__four {
     top: initial;
-    bottom: -35%;
     bottom: -35%;
     left: 3%;
     width: 13vw;
