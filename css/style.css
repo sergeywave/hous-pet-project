@@ -2976,11 +2976,13 @@ button {
 
 .bolor-box-el-photo__one {
     top: 10%;
+    top: 10%;
     left: 95%;
     transform: translate(-50%, -50%) rotate(12deg);
 }
 
 .bolor-box-el-photo__two {
+    top: 10%;
     top: 10%;
     left: 2%;
     transform: translate(-50%, -50%) rotate(-9deg);
