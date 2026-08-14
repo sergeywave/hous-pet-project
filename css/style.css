@@ -2963,11 +2963,13 @@ button {
 
 .bolor-box-el-photo img {
     width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 .bolor-box-el__text {
+    font-size: 18px;
     font-size: 18px;
     line-height: 1.6;
     max-width: 80%;
@@ -2976,13 +2978,11 @@ button {
 
 .bolor-box-el-photo__one {
     top: 10%;
-    top: 10%;
     left: 95%;
     transform: translate(-50%, -50%) rotate(12deg);
 }
 
 .bolor-box-el-photo__two {
-    top: 10%;
     top: 10%;
     left: 2%;
     transform: translate(-50%, -50%) rotate(-9deg);
